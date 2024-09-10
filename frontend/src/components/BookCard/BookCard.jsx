@@ -12,7 +12,7 @@ function BookCard({ data, favourite }) {
 
   const handleFavourite = async () => {
     const response = await axios.delete(
-      `http://localhost:1000/api/v1/remove-book-from-favorite`,
+      `https://bookstore-7gww.onrender.com/api/v1/remove-book-from-favorite`,
       { headers }
     );
     alert(response.data.message);
