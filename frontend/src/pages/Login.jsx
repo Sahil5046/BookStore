@@ -25,7 +25,7 @@ function Login() {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "http://localhost:1000/api/v1/login",
+          "https://bookstore-7gww.onrender.com/api/v1/login",
           values
         );
         dispatch(authActions.login());

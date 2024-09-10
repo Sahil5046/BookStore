@@ -17,7 +17,7 @@ function Setting() {
 
   const handleAddress = async () => {
     const response = await axios.put(
-      "http://localhost:1000/api/v1/update-address",
+      "https://bookstore-7gww.onrender.com/api/v1/update-address",
       Values,
       { headers }
     );
@@ -27,7 +27,7 @@ function Setting() {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:1000/api/v1/get-userdetails",
+        "https://bookstore-7gww.onrender.com/api/v1/get-userdetails",
         { headers }
       );
 

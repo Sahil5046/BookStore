@@ -29,7 +29,7 @@ function SignUp() {
         alert("All fields are required");
       } else {
         const response = await axios.post(
-          "http://localhost:1000/api/v1/signup",
+          "https://bookstore-7gww.onrender.com/api/v1/signup",
           values
         );
         alert(response.data.message);

@@ -10,7 +10,7 @@ function AllBooks() {
     // Fetch data from API
     const fetch = async () => {
       const response = await axios.get(
-        "http://localhost:1000/api/v1/get-all-books"
+        "https://bookstore-7gww.onrender.com/api/v1/get-all-books"
       );
       setData(response.data.data);
     };
