@@ -123,8 +123,8 @@ const AllOrders = () => {
                     >
                       {items.status === "Order Placed" ? (
                         <div className="text-yellow-200"> {items.status} </div>
-                      ) : items.status === "Canceled" ? (
-                        <div className="text-red-300">{items.status}</div>
+                      ) : items.status === "Cancelled" ? (
+                        <div className="text-red-400">{items.status}</div>
                       ) : (
                         <div className="text-green-200"> {items.status} </div>
                       )}
